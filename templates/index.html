@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>QR Code Attendance</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>QR Code Attendance</h1>
+      <form action="{{ url_for('submit') }}" method="post">
+        <div class="form-group">
+          <label for="data">Scan QR Code:</label>
+          <input type="text" class="form-control" id="data" name="data">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
